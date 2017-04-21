@@ -14,5 +14,11 @@ namespace Net.Chdk.Model.Card
             var rootPath = GetRootPath(cardInfo);
             return Path.Combine(rootPath, "METADATA");
         }
+
+        public static string GetDcimPath(this CardInfo cardInfo)
+        {
+            var rootPath = GetRootPath(cardInfo);
+            return Path.Combine(rootPath, "DCIM");
+        }
     }
 }
