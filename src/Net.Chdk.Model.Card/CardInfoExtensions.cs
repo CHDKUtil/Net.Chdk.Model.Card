@@ -20,5 +20,11 @@ namespace Net.Chdk.Model.Card
             var rootPath = GetRootPath(cardInfo);
             return Path.Combine(rootPath, "DCIM");
         }
+
+        public static string GetDiskbootPath(this CardInfo cardInfo)
+        {
+            var rootPath = GetRootPath(cardInfo);
+            return Path.Combine(rootPath, "DISKBOOT.BIN");
+        }
     }
 }
