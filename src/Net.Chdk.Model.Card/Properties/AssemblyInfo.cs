@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Net.Chdk")]
+[assembly: AssemblyTitle("Net.Chdk.Model.Card")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dmitry Shechtman")]
-[assembly: AssemblyProduct("Net.Chdk.Model.Card")]
+[assembly: AssemblyProduct("Net.Chdk")]
 [assembly: AssemblyCopyright("Copyright © 2017 Dmitry Shechtman")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
