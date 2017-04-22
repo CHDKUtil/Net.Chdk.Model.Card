@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace Net.Chdk.Model.Card
 {
@@ -6,6 +7,10 @@ namespace Net.Chdk.Model.Card
     {
         public static string GetRootPath(this CardInfo cardInfo)
         {
+            if (cardInfo == null)
+                throw new ArgumentNullException(nameof(cardInfo));
+            if (string.IsNullOrEmpty(cardInfo.DriveLetter))
+                throw new ArgumentException("Invalid drive letter", nameof(cardInfo));
             return $"{cardInfo.DriveLetter}\\";
         }
 
