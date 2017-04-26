@@ -17,7 +17,7 @@ namespace Net.Chdk.Model.Card
         public static string GetMetadataPath(this CardInfo cardInfo)
         {
             var rootPath = GetRootPath(cardInfo);
-            return Path.Combine(rootPath, "METADATA");
+            return Path.Combine(rootPath, "_HDKMETA");
         }
 
         public static string GetDcimPath(this CardInfo cardInfo)
