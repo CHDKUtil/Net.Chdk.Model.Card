@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace Net.Chdk.Model.Card
 {
@@ -12,18 +11,6 @@ namespace Net.Chdk.Model.Card
             if (string.IsNullOrEmpty(cardInfo.DriveLetter))
                 throw new ArgumentException("Invalid drive letter", nameof(cardInfo));
             return $"{cardInfo.DriveLetter}\\";
-        }
-
-        public static string GetMetadataPath(this CardInfo cardInfo)
-        {
-            var rootPath = GetRootPath(cardInfo);
-            return Path.Combine(rootPath, "_HDKMETA");
-        }
-
-        public static string GetDcimPath(this CardInfo cardInfo)
-        {
-            var rootPath = GetRootPath(cardInfo);
-            return Path.Combine(rootPath, "DCIM");
         }
     }
 }
