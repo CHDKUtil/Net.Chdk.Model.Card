@@ -4,6 +4,7 @@ namespace Net.Chdk.Model.Card
 {
     public static class CardInfoExtensions
     {
+        [Obsolete]
         public static string GetRootPath(this CardInfo cardInfo)
         {
             if (cardInfo == null)

@@ -1,5 +1,8 @@
-﻿namespace Net.Chdk.Model.Card
+﻿using System;
+
+namespace Net.Chdk.Model.Card
 {
+    [Obsolete]
     public sealed class CardInfo
     {
         public string DeviceId { get; set; }
